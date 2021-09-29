@@ -1,0 +1,50 @@
+body{
+    margin: 10;
+    padding: 0;
+}
+
+.cities {
+    display: block;
+    float: left;
+    width: 500px;
+    margin: 5px;
+}
+
+th {
+    text-align: left;
+}
+
+/*tbody tr:not(:first-child):hover {}*/
+
+tbody tr:hover {
+    background-color: #4fc3fc;
+    color: white;
+}
+
+.city {
+    display: block;
+    float: left;
+    border: solid 1px green;
+    padding: 10px;
+    margin: 5px;
+}
+
+.city p {
+    margin-block: 6px;
+}
+
+input:invalid {
+    border: solid 1px silver;
+    border-left-width: 4px;
+    border-left-color: red;
+}
+
+input:valid {
+    border: solid 1px silver;
+    border-left-width: 4px;
+    border-left-color: green;
+}
+
+input.id {
+    border: none;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Simple JS & CDN Firebase CRUD</title>
+
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase-firestore.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body onload="load()">
+
+    <h2>
+        Simple JS & CDN Firebase CRUD Challenge
+    </h2>
+
+    <div class="city">
+        <form action="javascript:submit();" id="form">
+            <p>
+                <label>City Name</label><br>
+                <input type="text" name="name" required>
+            </p>
+            <p>
+                <label>State</label><br>
+                <input type="text" name="state" maxlength="2" required>
+            </p>
+            <p>
+                <label>Country</label><br>
+                <input type="text" name="country" maxlength="3" required>
+            </p>
+            <p>
+                <button id="btn">Submit</button>
+                <button id="del">Delete</button>
+            </p>
+            <input type="text" name="id" readonly class="id">
+        </form>
+    </div>
+
+    <div class="cities">
+        <table border="1" width="100%" id="cities">
+            <thead>
+                <tr>
+                    <th>City Name</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
